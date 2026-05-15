@@ -440,7 +440,7 @@ export const modelColumnLabels: Record<TableColumn, string> = {
 };
 
 export const simplePageCards: Record<
-  Exclude<PageKey, "command">
+  Exclude<PageKey, "command">,
   {
     title: string;
     description: string;
