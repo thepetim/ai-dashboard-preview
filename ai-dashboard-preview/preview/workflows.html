@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workflows | AI Dashboard Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="workflows">
+    <button class="mobile-menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      Menu
+    </button>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">✦</div>
+          <div>
+            <strong>Northstar AI</strong>
+            <span>Enterprise Command</span>
+          </div>
+        </div>
+        <div class="nav-group">
+          <p>Overview</p>
+          <a data-page-link="command-center" href="./index.html">Command Center</a>
+          <a data-page-link="workflows" href="./workflows.html">Workflows</a>
+          <a data-page-link="model-usage" href="./model-usage.html">Model Usage</a>
+          <a data-page-link="insights" href="./insights.html">Insights</a>
+        </div>
+        <div class="nav-group">
+          <p>Operations</p>
+          <a data-page-link="team-activity" href="./team-activity.html">Team Activity</a>
+          <a data-page-link="trust-safety" href="./trust-safety.html">Trust & Safety</a>
+          <a data-page-link="settings" href="./settings.html">Settings</a>
+        </div>
+        <div class="copilot-card">
+          <span class="pill info">Workflow AI</span>
+          <h3>Build with guidance</h3>
+          <p>Use AI to assemble multi-step automations, review outputs, and monitor reliability.</p>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <form class="search-form" action="./workflows.html" method="get">
+            <input
+              class="search-input"
+              type="search"
+              name="q"
+              placeholder="Search workflows, runs, prompts, or agents..."
+              aria-label="Search workflows, runs, prompts, or agents"
+            />
+            <button class="search-shortcut" type="button" aria-label="Open command palette">⌘K</button>
+          </form>
+          <div class="topbar-actions">
+            <button>Filters</button>
+            <button>New workflow</button>
+          </div>
+        </header>
+
+        <section class="hero">
+          <div>
+            <span class="pill">Workflow orchestration</span>
+            <h1>AI Workflows</h1>
+            <p>
+              Create, monitor, and refine multi-step AI automations across revenue, support, legal,
+              and operations teams.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <button class="secondary">Import template</button>
+            <button class="primary">Create workflow</button>
+          </div>
+        </section>
+
+        <section class="page-stack">
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>Workflow portfolio</h3>
+                <p>Snapshot of the most important automations currently active in production.</p>
+              </div>
+              <span class="pill success">184 active</span>
+            </div>
+            <div class="metric-strip">
+              <div><span>Daily runs</span><strong>6.2k</strong></div>
+              <div><span>Completion</span><strong>98.1%</strong></div>
+              <div><span>Human reviews</span><strong>214</strong></div>
+              <div><span>Saved hours</span><strong>1,420</strong></div>
+            </div>
+          </article>
+
+          <section class="feature-grid">
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h3>Lead qualification copilot</h3>
+                  <p>Routes, scores, and enriches inbound pipeline.</p>
+                </div>
+                <span class="pill success">Healthy</span>
+              </div>
+              <div class="settings-list">
+                <div><strong>Steps</strong><p>Intake, enrichment, scoring, routing, CRM sync.</p></div>
+                <div><strong>Owner</strong><p>Growth operations · 2.4k runs per day.</p></div>
+              </div>
+            </article>
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h3>Support triage assistant</h3>
+                  <p>Summarizes incoming cases and assigns urgency.</p>
+                </div>
+                <span class="pill warning">Monitoring</span>
+              </div>
+              <div class="settings-list">
+                <div><strong>Steps</strong><p>Intent detect, policy match, urgency score, queue assign.</p></div>
+                <div><strong>Owner</strong><p>Customer experience · 1.1k runs per day.</p></div>
+              </div>
+            </article>
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h3>Contract risk extraction</h3>
+                  <p>Flags clause issues and prepares legal summaries.</p>
+                </div>
+                <span class="pill success">Healthy</span>
+              </div>
+              <div class="settings-list">
+                <div><strong>Steps</strong><p>OCR intake, clause parse, risk rank, reviewer handoff.</p></div>
+                <div><strong>Owner</strong><p>Legal ops · 840 runs per day.</p></div>
+              </div>
+            </article>
+          </section>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>Recent workflow runs</h3>
+                <p>Placeholder production table for run diagnostics and approvals.</p>
+              </div>
+              <span class="pill info">Live preview</span>
+            </div>
+            <table class="detail-table">
+              <thead>
+                <tr>
+                  <th>Workflow</th>
+                  <th>Last run</th>
+                  <th>Status</th>
+                  <th>Confidence</th>
+                  <th>Next action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Lead qualification copilot</td><td>2 min ago</td><td>Completed</td><td>97%</td><td>Review sample</td></tr>
+                <tr><td>Support triage assistant</td><td>7 min ago</td><td>Needs review</td><td>71%</td><td>Check routing</td></tr>
+                <tr><td>Contract risk extraction</td><td>12 min ago</td><td>Completed</td><td>95%</td><td>Open summary</td></tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

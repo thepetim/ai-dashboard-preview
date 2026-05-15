@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Activity | AI Dashboard Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="team-activity">
+    <button class="mobile-menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      Menu
+    </button>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">✦</div>
+          <div>
+            <strong>Northstar AI</strong>
+            <span>Enterprise Command</span>
+          </div>
+        </div>
+        <div class="nav-group">
+          <p>Overview</p>
+          <a data-page-link="command-center" href="./index.html">Command Center</a>
+          <a data-page-link="workflows" href="./workflows.html">Workflows</a>
+          <a data-page-link="model-usage" href="./model-usage.html">Model Usage</a>
+          <a data-page-link="insights" href="./insights.html">Insights</a>
+        </div>
+        <div class="nav-group">
+          <p>Operations</p>
+          <a data-page-link="team-activity" href="./team-activity.html">Team Activity</a>
+          <a data-page-link="trust-safety" href="./trust-safety.html">Trust & Safety</a>
+          <a data-page-link="settings" href="./settings.html">Settings</a>
+        </div>
+        <div class="copilot-card">
+          <span class="pill info">Team AI</span>
+          <h3>Track collaboration</h3>
+          <p>Monitor how humans and AI agents move work forward across every function.</p>
+        </div>
+      </aside>
+      <main class="main">
+        <header class="topbar">
+          <form class="search-form" action="./team-activity.html" method="get">
+            <input
+              class="search-input"
+              type="search"
+              name="q"
+              placeholder="Search teammates, approvals, comments, or handoffs..."
+              aria-label="Search teammates, approvals, comments, or handoffs"
+            />
+            <button class="search-shortcut" type="button" aria-label="Open command palette">⌘K</button>
+          </form>
+          <div class="topbar-actions">
+            <button>Filter teams</button>
+            <button>Export feed</button>
+          </div>
+        </header>
+        <section class="hero">
+          <div>
+            <span class="pill">Collaboration stream</span>
+            <h1>Team Activity</h1>
+            <p>Review approvals, launches, comments, AI handoffs, and operational decisions in one activity feed.</p>
+          </div>
+          <div class="hero-actions">
+            <button class="secondary">Open inbox</button>
+            <button class="primary">Invite teammate</button>
+          </div>
+        </section>
+        <section class="page-stack">
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>Activity overview</h3>
+                <p>Daily collaboration metrics across teams and AI workflows.</p>
+              </div>
+            </div>
+            <div class="metric-strip">
+              <div><span>Approvals today</span><strong>42</strong></div>
+              <div><span>Comments added</span><strong>118</strong></div>
+              <div><span>AI handoffs</span><strong>286</strong></div>
+              <div><span>Blocked tasks</span><strong>7</strong></div>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>Recent activity feed</h3>
+                <p>Placeholder feed entries that show the layout architecture for a real activity stream.</p>
+              </div>
+            </div>
+            <div class="timeline">
+              <div><span class="dot success"></span>Anita Noor approved a workflow update for the growth copilot.</div>
+              <div><span class="dot info"></span>Marcus Kane published a new prompt pack for customer support.</div>
+              <div><span class="dot warning"></span>Jules Rivers flagged a high-cost model route for review.</div>
+              <div><span class="dot"></span>AI assistant summarized the weekly operations review for leadership.</div>
+            </div>
+          </article>
+          <section class="feature-grid two-up">
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h3>Top contributors</h3>
+                  <p>Placeholder section for productivity, approvals, and AI leverage by team.</p>
+                </div>
+              </div>
+              <div class="settings-list">
+                <div><strong>Growth operations</strong><p>Highest workflow usage and strongest automation output quality this week.</p></div>
+                <div><strong>Customer experience</strong><p>Most review activity, driven by support routing changes.</p></div>
+              </div>
+            </article>
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h3>Upcoming checkpoints</h3>
+                  <p>Human-in-the-loop reviews, launches, and team rituals.</p>
+                </div>
+              </div>
+              <div class="placeholder-cards">
+                <div><strong>Ops review</strong><p>Tomorrow at 10:00 with updated support metrics.</p></div>
+                <div><strong>Prompt QA session</strong><p>Thursday to review cost-intensive prompts and assistant behaviors.</p></div>
+              </div>
+            </article>
+          </section>
+        </section>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

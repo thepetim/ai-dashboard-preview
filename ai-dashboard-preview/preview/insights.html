@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insights | AI Dashboard Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="insights">
+    <button class="mobile-menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      Menu
+    </button>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">✦</div>
+          <div>
+            <strong>Northstar AI</strong>
+            <span>Enterprise Command</span>
+          </div>
+        </div>
+        <div class="nav-group">
+          <p>Overview</p>
+          <a data-page-link="command-center" href="./index.html">Command Center</a>
+          <a data-page-link="workflows" href="./workflows.html">Workflows</a>
+          <a data-page-link="model-usage" href="./model-usage.html">Model Usage</a>
+          <a data-page-link="insights" href="./insights.html">Insights</a>
+        </div>
+        <div class="nav-group">
+          <p>Operations</p>
+          <a data-page-link="team-activity" href="./team-activity.html">Team Activity</a>
+          <a data-page-link="trust-safety" href="./trust-safety.html">Trust & Safety</a>
+          <a data-page-link="settings" href="./settings.html">Settings</a>
+        </div>
+        <div class="copilot-card">
+          <span class="pill info">Insight AI</span>
+          <h3>Summarize trends</h3>
+          <p>Find patterns, explain anomalies, and prepare concise executive takeaways.</p>
+        </div>
+      </aside>
+      <main class="main">
+        <header class="topbar">
+          <form class="search-form" action="./insights.html" method="get">
+            <input
+              class="search-input"
+              type="search"
+              name="q"
+              placeholder="Search insights, anomalies, executive summaries..."
+              aria-label="Search insights, anomalies, executive summaries"
+            />
+            <button class="search-shortcut" type="button" aria-label="Open command palette">⌘K</button>
+          </form>
+          <div class="topbar-actions">
+            <button>Share brief</button>
+            <button>Create insight</button>
+          </div>
+        </header>
+        <section class="hero">
+          <div>
+            <span class="pill">Executive intelligence</span>
+            <h1>Insights</h1>
+            <p>Bring together analytics, AI summaries, and strategic recommendations in a single calm view.</p>
+          </div>
+          <div class="hero-actions">
+            <button class="secondary">Weekly recap</button>
+            <button class="primary">Generate brief</button>
+          </div>
+        </section>
+        <section class="page-stack">
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>Top AI findings</h3>
+                <p>Preview cards for leadership-facing insights generated from live product activity.</p>
+              </div>
+            </div>
+            <section class="feature-grid">
+              <div class="placeholder-cards">
+                <div><strong>Revenue upside</strong><p>AI-assisted lead scoring increased qualified opportunities by 14% this quarter.</p></div>
+              </div>
+              <div class="placeholder-cards">
+                <div><strong>Support pressure</strong><p>Escalation volume rose after routing thresholds became more conservative this week.</p></div>
+              </div>
+              <div class="placeholder-cards">
+                <div><strong>Legal savings</strong><p>Contract extraction reduced first-pass review time by an estimated 11 hours per week.</p></div>
+              </div>
+            </section>
+          </article>
+          <section class="feature-grid two-up">
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h3>Recommended actions</h3>
+                  <p>AI-generated next steps that help operators convert signal into decisions.</p>
+                </div>
+              </div>
+              <div class="settings-list">
+                <div><strong>Re-tune support triage</strong><p>Lower auto-escalation sensitivity for medium-confidence cases.</p></div>
+                <div><strong>Expand growth copilot</strong><p>Replicate successful lead scoring logic in the partner funnel.</p></div>
+                <div><strong>Prompt QA review</strong><p>Review three high-cost prompt chains for token compression opportunities.</p></div>
+              </div>
+            </article>
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h3>Placeholder summary</h3>
+                  <p>This section stands in for narrative briefing blocks and AI-generated readouts.</p>
+                </div>
+              </div>
+              <div class="assistant-output">
+                Northstar AI is currently in a healthy operational state, with cost efficiency trending
+                positively and the most material risk concentrated in support workflow routing.
+              </div>
+            </article>
+          </section>
+        </section>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

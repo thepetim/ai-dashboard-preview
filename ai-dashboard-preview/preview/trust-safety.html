@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trust & Safety | AI Dashboard Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="trust-safety">
+    <button class="mobile-menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      Menu
+    </button>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">✦</div>
+          <div>
+            <strong>Northstar AI</strong>
+            <span>Enterprise Command</span>
+          </div>
+        </div>
+        <div class="nav-group">
+          <p>Overview</p>
+          <a data-page-link="command-center" href="./index.html">Command Center</a>
+          <a data-page-link="workflows" href="./workflows.html">Workflows</a>
+          <a data-page-link="model-usage" href="./model-usage.html">Model Usage</a>
+          <a data-page-link="insights" href="./insights.html">Insights</a>
+        </div>
+        <div class="nav-group">
+          <p>Operations</p>
+          <a data-page-link="team-activity" href="./team-activity.html">Team Activity</a>
+          <a data-page-link="trust-safety" href="./trust-safety.html">Trust & Safety</a>
+          <a data-page-link="settings" href="./settings.html">Settings</a>
+        </div>
+        <div class="copilot-card">
+          <span class="pill warning">Governance AI</span>
+          <h3>Review guardrails</h3>
+          <p>Monitor policy alerts, evaluations, reviewers, and risk posture across workflows.</p>
+        </div>
+      </aside>
+      <main class="main">
+        <header class="topbar">
+          <form class="search-form" action="./trust-safety.html" method="get">
+            <input
+              class="search-input"
+              type="search"
+              name="q"
+              placeholder="Search policies, incidents, evaluations, or audit logs..."
+              aria-label="Search policies, incidents, evaluations, or audit logs"
+            />
+            <button class="search-shortcut" type="button" aria-label="Open command palette">⌘K</button>
+          </form>
+          <div class="topbar-actions">
+            <button>Review queue</button>
+            <button>New policy</button>
+          </div>
+        </header>
+        <section class="hero">
+          <div>
+            <span class="pill">Governance center</span>
+            <h1>Trust &amp; Safety</h1>
+            <p>Keep AI systems aligned with enterprise policy through evaluations, monitoring, and review workflows.</p>
+          </div>
+          <div class="hero-actions">
+            <button class="secondary">Open audit log</button>
+            <button class="primary">Run evaluation</button>
+          </div>
+        </section>
+        <section class="page-stack">
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>Safety posture</h3>
+                <p>Operational summary for risk, evaluation coverage, and reviewer load.</p>
+              </div>
+              <span class="pill success">Stable</span>
+            </div>
+            <div class="metric-strip">
+              <div><span>Open alerts</span><strong>3</strong></div>
+              <div><span>Coverage</span><strong>87%</strong></div>
+              <div><span>Pending reviews</span><strong>14</strong></div>
+              <div><span>Critical incidents</span><strong>0</strong></div>
+            </div>
+          </article>
+          <section class="feature-grid two-up">
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h3>Policy monitoring</h3>
+                  <p>Placeholder content for alerts, categories, and trend analysis.</p>
+                </div>
+              </div>
+              <div class="placeholder-cards">
+                <div><strong>Low-risk prompts</strong><p>3 cases flagged for manual review in the current cycle.</p></div>
+                <div><strong>Restricted content checks</strong><p>All active workflows passed the latest baseline scan.</p></div>
+                <div><strong>Prompt abuse detection</strong><p>No active incidents in the last 24 hours.</p></div>
+              </div>
+            </article>
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h3>Reviewer capacity</h3>
+                  <p>Queue health and staffing placeholder for human-in-the-loop governance.</p>
+                </div>
+              </div>
+              <div class="settings-list">
+                <div><strong>Legal review</strong><p>4 items pending, median turnaround 38 minutes.</p></div>
+                <div><strong>Trust & safety</strong><p>6 items pending, no SLA breach risk currently.</p></div>
+                <div><strong>Support oversight</strong><p>4 items pending after new routing policy rollout.</p></div>
+              </div>
+            </article>
+          </section>
+        </section>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

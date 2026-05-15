@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Dashboard Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="command-center">
+    <button class="mobile-menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      Menu
+    </button>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">✦</div>
+          <div>
+            <strong>Northstar AI</strong>
+            <span>Enterprise Command</span>
+          </div>
+        </div>
+
+        <div class="nav-group">
+          <p>Overview</p>
+          <a data-page-link="command-center" href="./index.html">Command Center</a>
+          <a data-page-link="workflows" href="./workflows.html">Workflows</a>
+          <a data-page-link="model-usage" href="./model-usage.html">Model Usage</a>
+          <a data-page-link="insights" href="./insights.html">Insights</a>
+        </div>
+
+        <div class="nav-group">
+          <p>Operations</p>
+          <a data-page-link="team-activity" href="./team-activity.html">Team Activity</a>
+          <a data-page-link="trust-safety" href="./trust-safety.html">Trust & Safety</a>
+          <a data-page-link="settings" href="./settings.html">Settings</a>
+        </div>
+
+        <div class="copilot-card">
+          <span class="pill info">AI Copilot</span>
+          <h3>Ask the workspace</h3>
+          <p>Summaries, anomaly checks, workflow suggestions, and instant answers.</p>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <form class="search-form" action="./index.html" method="get">
+            <input
+              class="search-input"
+              type="search"
+              name="q"
+              placeholder="Search dashboards, workflows, or ask AI..."
+              aria-label="Search dashboards, workflows, or ask AI"
+            />
+            <button class="search-shortcut" type="button" aria-label="Open command palette">⌘K</button>
+          </form>
+          <div class="topbar-actions">
+            <button>Notifications</button>
+            <button>Anita Noor</button>
+          </div>
+        </header>
+
+        <section class="hero" id="command-center">
+          <div>
+            <span class="pill">Live command center</span>
+            <h1>AI Operations Dashboard</h1>
+            <p>
+              A premium enterprise workspace for monitoring model performance, workflow health,
+              team velocity, and AI-assisted decision making in one calm surface.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <button class="secondary">Run insight</button>
+            <button class="primary">New AI workflow</button>
+          </div>
+        </section>
+
+        <section class="status-strip">
+          <div class="status-chip live">
+            <span class="pulse-dot"></span>
+            AI agents healthy
+          </div>
+          <div class="status-chip">
+            18 automations running
+          </div>
+          <div class="status-chip">
+            Avg response 820ms
+          </div>
+          <div class="status-chip">
+            3 items need review
+          </div>
+        </section>
+
+        <section class="stats">
+          <article class="card">
+            <div class="card-top"><span>AI Revenue Influence</span><span class="pill info">+18.2%</span></div>
+            <h2>$2.48M</h2>
+            <p>Workflow-assisted pipeline this quarter</p>
+          </article>
+          <article class="card">
+            <div class="card-top"><span>Model Efficiency</span><span class="pill success">+6.1%</span></div>
+            <h2>94.8%</h2>
+            <p>Spend per task dropped over 30 days</p>
+          </article>
+          <article class="card">
+            <div class="card-top"><span>Active Automations</span><span class="pill">+12</span></div>
+            <h2>184</h2>
+            <p>Across support, ops, and revenue teams</p>
+          </article>
+          <article class="card">
+            <div class="card-top"><span>Escalation Risk</span><span class="pill warning">-1.1%</span></div>
+            <h2>3.4%</h2>
+            <p>Critical workflow exceptions this week</p>
+          </article>
+        </section>
+
+        <section class="analytics-strip">
+          <article class="mini-analytics-card">
+            <span>Reasoning requests</span>
+            <strong>248k</strong>
+            <small>Premium tier usage in the last 7 days</small>
+          </article>
+          <article class="mini-analytics-card">
+            <span>Automation savings</span>
+            <strong>1,420h</strong>
+            <small>Estimated manual work avoided this month</small>
+          </article>
+          <article class="mini-analytics-card">
+            <span>Confidence stability</span>
+            <strong>97.8%</strong>
+            <small>Average workflow confidence across key routes</small>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <article class="panel chart-panel">
+            <div class="panel-header">
+              <div>
+                <h3>System performance</h3>
+                <p>Token throughput, workflow completion, and confidence trends over 12 weeks.</p>
+              </div>
+              <div class="segmented">
+                <button>30 days</button>
+                <button class="active">12 weeks</button>
+                <button>YTD</button>
+              </div>
+            </div>
+            <div class="mini-stats">
+              <div><span>Requests</span><strong>12.8M</strong></div>
+              <div><span>Median latency</span><strong>820ms</strong></div>
+              <div><span>Success rate</span><strong>98.9%</strong></div>
+            </div>
+            <div class="chart">
+              <div style="height:42%"></div>
+              <div style="height:56%"></div>
+              <div style="height:51%"></div>
+              <div style="height:68%"></div>
+              <div style="height:60%"></div>
+              <div style="height:74%"></div>
+              <div style="height:70%"></div>
+              <div style="height:88%"></div>
+              <div style="height:80%"></div>
+              <div style="height:91%"></div>
+              <div style="height:86%"></div>
+              <div style="height:95%"></div>
+            </div>
+            <div class="chart-footnote">
+              <span class="live-inline"><span class="pulse-dot"></span> Live ingestion active</span>
+              <span>Updated 24 seconds ago</span>
+            </div>
+          </article>
+
+          <article class="panel assistant-panel">
+            <div class="panel-header">
+              <div>
+                <h3>AI assistant</h3>
+                <p>Embedded decision support for the current workspace.</p>
+              </div>
+              <span class="pill info">Context aware</span>
+            </div>
+            <div class="assistant-status">
+              <div class="assistant-status-item">
+                <span class="pulse-dot"></span>
+                Copilot listening
+              </div>
+              <div class="assistant-status-item muted">
+                12 sources in context
+              </div>
+            </div>
+            <div class="assistant-section">
+              <div class="assistant-section-header">
+                <strong>Quick prompts</strong>
+                <span>Suggested</span>
+              </div>
+              <div class="stack">
+                <div class="prompt-item">Why did support escalations spike this morning?</div>
+                <div class="prompt-item">Summarize revenue-impacting workflow changes.</div>
+                <div class="prompt-item">Draft a status update for leadership.</div>
+              </div>
+            </div>
+            <div class="assistant-section">
+              <div class="assistant-section-header">
+                <strong>Conversation</strong>
+                <span>Recent</span>
+              </div>
+              <div class="conversation-list">
+                <div class="conversation-item user">
+                  <small>You · 3m ago</small>
+                  <p>Why did escalation volume rise after the routing update?</p>
+                </div>
+                <div class="conversation-item ai">
+                  <small>Assistant · 2m ago</small>
+                  <p>The threshold change caused medium-confidence cases to route to human review 71% more often.</p>
+                </div>
+                <div class="conversation-item user">
+                  <small>You · 1m ago</small>
+                  <p>What should the support team do next?</p>
+                </div>
+              </div>
+            </div>
+            <div class="assistant-section">
+              <div class="assistant-section-header">
+                <strong>Smart insights</strong>
+                <span>Live</span>
+              </div>
+              <div class="assistant-output">
+                The rise in escalations is primarily tied to a new routing rule in the support
+                workflow. 71% of affected cases were auto-escalated despite medium confidence.
+              </div>
+            </div>
+            <div class="assistant-section two-up">
+              <div class="assistant-mini-panel">
+                <div class="assistant-section-header">
+                  <strong>Workflow recommendations</strong>
+                  <span>3</span>
+                </div>
+                <div class="assistant-recommendation-list">
+                  <div class="assistant-recommendation">
+                    <strong>Re-tune support triage</strong>
+                    <p>Lower escalation sensitivity for medium-confidence requests.</p>
+                  </div>
+                  <div class="assistant-recommendation">
+                    <strong>Compress prompt chain</strong>
+                    <p>Reduce token spend in the executive summary workflow.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="assistant-mini-panel">
+                <div class="assistant-section-header">
+                  <strong>Live activity</strong>
+                  <span>Now</span>
+                </div>
+                <div class="assistant-activity-list">
+                  <div class="assistant-activity-item">
+                    <span class="pulse-dot"></span>
+                    Generating support summary
+                  </div>
+                  <div class="assistant-activity-item">
+                    <span class="pulse-dot soft"></span>
+                    Reviewing model spend alert
+                  </div>
+                  <div class="assistant-activity-item">
+                    <span class="pulse-dot soft"></span>
+                    Preparing leadership brief
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="assistant-section">
+              <div class="assistant-section-header">
+                <strong>Contextual actions</strong>
+                <span>Fast</span>
+              </div>
+              <div class="assistant-actions">
+                <button class="assistant-action-chip" type="button">Create summary</button>
+                <button class="assistant-action-chip" type="button">Open workflow</button>
+                <button class="assistant-action-chip" type="button">Compare models</button>
+                <button class="assistant-action-chip" type="button">Share insight</button>
+              </div>
+            </div>
+            <div class="assistant-loading">
+              <div class="skeleton-line short"></div>
+              <div class="skeleton-line"></div>
+              <div class="skeleton-line medium"></div>
+            </div>
+            <div class="composer">Ask AI to analyze a workflow, summarize results, or prepare a response...</div>
+          </article>
+        </section>
+
+        <section class="bottom-grid">
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>Recent workflows</h3>
+                <p>Highest-impact automations currently running.</p>
+              </div>
+            </div>
+            <div class="workflow-list">
+              <div class="workflow-row"><strong>Lead qualification copilot</strong><span class="pill success">Healthy</span></div>
+              <div class="workflow-row"><strong>Support triage assistant</strong><span class="pill warning">Monitoring</span></div>
+              <div class="workflow-row"><strong>Contract risk extraction</strong><span class="pill success">Healthy</span></div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>Activity timeline</h3>
+                <p>Human and AI actions across your workspace.</p>
+              </div>
+            </div>
+            <div class="timeline">
+              <div><span class="dot info"></span>Weekly planning brief generated</div>
+              <div><span class="dot warning"></span>Support escalation cluster detected</div>
+              <div><span class="dot success"></span>Revenue summary sent to leadership</div>
+              <div><span class="dot"></span>Prompt library updated for sales</div>
+            </div>
+          </article>
+        </section>
+
+        <section class="placeholder-grid">
+          <article class="panel empty-state-panel">
+            <div class="panel-header">
+              <div>
+                <h3>Approval queue</h3>
+                <p>Priority actions that need human review before release.</p>
+              </div>
+              <span class="pill success">Clear</span>
+            </div>
+            <div class="empty-state">
+              <div class="empty-state-mark">AI</div>
+              <strong>No urgent approvals</strong>
+              <p>All critical automations are within policy and no blocked actions require intervention right now.</p>
+            </div>
+          </article>
+
+          <article class="panel loading-panel">
+            <div class="panel-header">
+              <div>
+                <h3>Queued recommendations</h3>
+                <p>Fresh optimization ideas currently being generated.</p>
+              </div>
+              <span class="pill">In progress</span>
+            </div>
+            <div class="skeleton-card">
+              <div class="skeleton-line medium"></div>
+              <div class="skeleton-line"></div>
+              <div class="skeleton-line short"></div>
+            </div>
+            <div class="skeleton-card">
+              <div class="skeleton-line short"></div>
+              <div class="skeleton-line"></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="panel table-panel">
+          <div class="panel-header">
+            <div>
+              <h3>Model usage statistics</h3>
+              <p>Production throughput, reliability, and spend across active model tiers.</p>
+            </div>
+            <div class="topbar-actions">
+              <button>Customize columns</button>
+              <button>Export</button>
+            </div>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>Requests</th>
+                <th>Median latency</th>
+                <th>Spend</th>
+                <th>Success</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>GPT-5.4</td><td>248,390</td><td>1.2s</td><td>$18,420</td><td>98.4%</td></tr>
+              <tr><td>GPT-5.4 Mini</td><td>902,114</td><td>480ms</td><td>$9,870</td><td>99.1%</td></tr>
+              <tr><td>Embedding Worker</td><td>1.4M</td><td>190ms</td><td>$4,110</td><td>99.8%</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

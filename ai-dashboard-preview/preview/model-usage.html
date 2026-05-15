@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model Usage | AI Dashboard Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="model-usage">
+    <button class="mobile-menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      Menu
+    </button>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">✦</div>
+          <div>
+            <strong>Northstar AI</strong>
+            <span>Enterprise Command</span>
+          </div>
+        </div>
+        <div class="nav-group">
+          <p>Overview</p>
+          <a data-page-link="command-center" href="./index.html">Command Center</a>
+          <a data-page-link="workflows" href="./workflows.html">Workflows</a>
+          <a data-page-link="model-usage" href="./model-usage.html">Model Usage</a>
+          <a data-page-link="insights" href="./insights.html">Insights</a>
+        </div>
+        <div class="nav-group">
+          <p>Operations</p>
+          <a data-page-link="team-activity" href="./team-activity.html">Team Activity</a>
+          <a data-page-link="trust-safety" href="./trust-safety.html">Trust & Safety</a>
+          <a data-page-link="settings" href="./settings.html">Settings</a>
+        </div>
+        <div class="copilot-card">
+          <span class="pill info">Usage AI</span>
+          <h3>Optimize spend</h3>
+          <p>Track model performance, route intelligently, and reduce cost per workflow.</p>
+        </div>
+      </aside>
+      <main class="main">
+        <header class="topbar">
+          <form class="search-form" action="./model-usage.html" method="get">
+            <input
+              class="search-input"
+              type="search"
+              name="q"
+              placeholder="Search models, spend, latency, or evaluations..."
+              aria-label="Search models, spend, latency, or evaluations"
+            />
+            <button class="search-shortcut" type="button" aria-label="Open command palette">⌘K</button>
+          </form>
+          <div class="topbar-actions">
+            <button>Compare models</button>
+            <button>Export</button>
+          </div>
+        </header>
+        <section class="hero">
+          <div>
+            <span class="pill">Inference operations</span>
+            <h1>Model Usage</h1>
+            <p>Monitor throughput, latency, cost, and reliability across every model tier in production.</p>
+          </div>
+          <div class="hero-actions">
+            <button class="secondary">Set guardrail</button>
+            <button class="primary">Review routing</button>
+          </div>
+        </section>
+        <section class="page-stack">
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>Usage summary</h3>
+                <p>Top-level numbers for the current billing cycle and production mix.</p>
+              </div>
+              <span class="pill success">Below budget</span>
+            </div>
+            <div class="metric-strip">
+              <div><span>Total requests</span><strong>12.8M</strong></div>
+              <div><span>Spend</span><strong>$32.4k</strong></div>
+              <div><span>Median latency</span><strong>820ms</strong></div>
+              <div><span>Success rate</span><strong>98.9%</strong></div>
+            </div>
+          </article>
+          <section class="feature-grid two-up">
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h3>Tier mix</h3>
+                  <p>How requests are distributed across premium, standard, and lightweight models.</p>
+                </div>
+              </div>
+              <div class="placeholder-cards">
+                <div><strong>Premium reasoning</strong><p>18% of requests · used for escalations, planning, and legal review.</p></div>
+                <div><strong>Standard generation</strong><p>41% of requests · used for summaries, drafts, and high-quality routing.</p></div>
+                <div><strong>Lightweight inference</strong><p>41% of requests · used for classification and fast internal automation.</p></div>
+              </div>
+            </article>
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h3>Cost controls</h3>
+                  <p>Preview of guardrails and fallback routing behavior.</p>
+                </div>
+              </div>
+              <div class="settings-list">
+                <div><strong>Budget ceiling</strong><p>$45k monthly soft limit with department-specific alerts.</p></div>
+                <div><strong>Fallback logic</strong><p>Large reasoning requests downgrade when confidence is high enough.</p></div>
+                <div><strong>Review path</strong><p>High-cost prompts route to prompt owners for optimization.</p></div>
+              </div>
+            </article>
+          </section>
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>Model performance table</h3>
+                <p>Production-ready placeholder for operational usage analysis.</p>
+              </div>
+            </div>
+            <table class="detail-table">
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>Requests</th>
+                  <th>Latency</th>
+                  <th>Spend</th>
+                  <th>Reliability</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>GPT-5.4</td><td>248,390</td><td>1.2s</td><td>$18,420</td><td>98.4%</td></tr>
+                <tr><td>GPT-5.4 Mini</td><td>902,114</td><td>480ms</td><td>$9,870</td><td>99.1%</td></tr>
+                <tr><td>Embedding Worker</td><td>1.4M</td><td>190ms</td><td>$4,110</td><td>99.8%</td></tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

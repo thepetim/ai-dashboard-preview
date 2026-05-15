@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings | AI Dashboard Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="settings">
+    <button class="mobile-menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      Menu
+    </button>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">✦</div>
+          <div>
+            <strong>Northstar AI</strong>
+            <span>Enterprise Command</span>
+          </div>
+        </div>
+        <div class="nav-group">
+          <p>Overview</p>
+          <a data-page-link="command-center" href="./index.html">Command Center</a>
+          <a data-page-link="workflows" href="./workflows.html">Workflows</a>
+          <a data-page-link="model-usage" href="./model-usage.html">Model Usage</a>
+          <a data-page-link="insights" href="./insights.html">Insights</a>
+        </div>
+        <div class="nav-group">
+          <p>Operations</p>
+          <a data-page-link="team-activity" href="./team-activity.html">Team Activity</a>
+          <a data-page-link="trust-safety" href="./trust-safety.html">Trust & Safety</a>
+          <a data-page-link="settings" href="./settings.html">Settings</a>
+        </div>
+        <div class="copilot-card">
+          <span class="pill info">Admin AI</span>
+          <h3>Configure the workspace</h3>
+          <p>Set policies, model defaults, roles, and environment-wide preferences.</p>
+        </div>
+      </aside>
+      <main class="main">
+        <header class="topbar">
+          <form class="search-form" action="./settings.html" method="get">
+            <input
+              class="search-input"
+              type="search"
+              name="q"
+              placeholder="Search settings, roles, billing, or model defaults..."
+              aria-label="Search settings, roles, billing, or model defaults"
+            />
+            <button class="search-shortcut" type="button" aria-label="Open command palette">⌘K</button>
+          </form>
+          <div class="topbar-actions">
+            <button>Billing</button>
+            <button>Save changes</button>
+          </div>
+        </header>
+        <section class="hero">
+          <div>
+            <span class="pill">Workspace controls</span>
+            <h1>Settings</h1>
+            <p>Manage organization-wide defaults for models, teams, security, and reporting.</p>
+          </div>
+          <div class="hero-actions">
+            <button class="secondary">View docs</button>
+            <button class="primary">Publish changes</button>
+          </div>
+        </section>
+        <section class="page-stack">
+          <section class="feature-grid two-up">
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h3>Workspace profile</h3>
+                  <p>Brand, locale, reporting cadence, and environment defaults.</p>
+                </div>
+              </div>
+              <div class="settings-list">
+                <div><strong>Display name</strong><p>Northstar AI Enterprise</p></div>
+                <div><strong>Default region</strong><p>US East · weekly executive digest every Monday 08:00.</p></div>
+                <div><strong>Billing owner</strong><p>Finance operations with shared read access for leadership.</p></div>
+              </div>
+            </article>
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h3>AI configuration</h3>
+                  <p>Model defaults, cost ceilings, and routing behaviors.</p>
+                </div>
+              </div>
+              <div class="settings-list">
+                <div><strong>Default generation model</strong><p>GPT-5.4 Mini for standard workflows.</p></div>
+                <div><strong>Reasoning escalation model</strong><p>GPT-5.4 for legal and executive tasks.</p></div>
+                <div><strong>Fallback policy</strong><p>Auto-downgrade where confidence remains above threshold.</p></div>
+              </div>
+            </article>
+          </section>
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>Access control templates</h3>
+                <p>Placeholder content for enterprise role management and governance.</p>
+              </div>
+            </div>
+            <table class="detail-table">
+              <thead>
+                <tr>
+                  <th>Role</th>
+                  <th>Primary scope</th>
+                  <th>Approvals</th>
+                  <th>Audit access</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Workspace admin</td><td>Global configuration</td><td>All policies</td><td>Full</td></tr>
+                <tr><td>Workflow owner</td><td>Assigned automations</td><td>Own workflows</td><td>Limited</td></tr>
+                <tr><td>Reviewer</td><td>Manual queue</td><td>Escalated items</td><td>Scoped</td></tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
