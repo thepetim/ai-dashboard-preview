@@ -444,9 +444,38 @@ export const simplePageCards: Record<
   {
     title: string;
     description: string;
-    cards: { title: string; body: string; badge?: string; tone?: "info" | "success" | "warning" | "neutral" }[];
+    cards: {
+      title: string;
+      body: string;
+      badge?: string;
+      tone?: "info" | "success" | "warning" | "neutral";
+    }[];
   }
 > = {
+  workspace: {
+    title: "AI Workspace",
+    description: "Interactive AI workspace for drafting, analysis, and generation.",
+    cards: [
+      {
+        title: "Prompt composer",
+        body: "Draft and refine prompts with structured context and AI assistance.",
+        badge: "Active",
+        tone: "info",
+      },
+      {
+        title: "Generation history",
+        body: "Review previous outputs, revisions, and saved generations.",
+        badge: "Recent",
+        tone: "success",
+      },
+      {
+        title: "Context sources",
+        body: "Attach files, notes, and references to improve AI output quality.",
+        badge: "Connected",
+        tone: "neutral",
+      },
+    ],
+  },
   workflows: {
     title: "Workflow portfolio",
     description: "Interactive placeholder cards for multi-step automation monitoring and management.",
